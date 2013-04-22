@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 22, 2013 at 03:13 PM
+-- Generation Time: Apr 22, 2013 at 03:20 PM
 -- Server version: 5.1.63
 -- PHP Version: 5.3.10
 
@@ -59,5 +59,37 @@ CREATE TABLE IF NOT EXISTS `stories` (
 
 --
 -- Dumping data for table `stories`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `firstname` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT 'Abondoned/Not-in-use/Using-usernames table instead',
+  `lastname` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL COMMENT 'Abondoned/Not-in-use/Using-usernames table instead',
+  `uid` int(100) NOT NULL AUTO_INCREMENT,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `is_verified` int(1) DEFAULT NULL,
+  `timestamp` int(20) NOT NULL,
+  `username` varchar(100) DEFAULT NULL,
+  `ocuppation` varchar(100) DEFAULT NULL,
+  `occupationat` varchar(100) DEFAULT NULL,
+  `city` varchar(255) DEFAULT NULL COMMENT 'current;hometown',
+  `pp` int(255) DEFAULT NULL,
+  `pp_dimensions` varchar(11) DEFAULT NULL COMMENT 'top;left',
+  `gender` int(1) DEFAULT NULL COMMENT '0-f;1-m',
+  `fbid` int(255) DEFAULT NULL COMMENT 'facebook id',
+  `setup` int(2) DEFAULT NULL COMMENT '1-done; 0-none',
+  UNIQUE KEY `uid` (`uid`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `users`
 --
 
