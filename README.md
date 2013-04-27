@@ -3,6 +3,7 @@
 A new design where every community member can be an editor. And even a begginer can get his/her work shared & discussed on BlenderNation.com News-stream.
 
 [Try out](http://loudcurtain.com/extra/blendernation)
+(Demo is hosted on a non-reliable server, so you may not able to connect)
 
 ##Currently project is in development stage - And is Unofficial.
 
